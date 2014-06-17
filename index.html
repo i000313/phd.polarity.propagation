@@ -1,1 +1,68 @@
-My GitHub Page
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Test-repo by i000313</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <p class="header">Source code, binaries and more information available on GitHub:</p>
+
+        <ul>
+          <li><a class="buttons github" href="https://github.com/i000313/phd.polarity.propagation">View On GitHub</a>      </li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="polarity-propagation-algorithm---implementation" class="anchor" href="#polarity-propagation-algorithm---implementation"><span class="octicon octicon-link"></span></a>Polarity Propagation Algorithm</h1>
+
+<p><img src="images/ex01-undirected-graph-state-03.png" alt="tiny-undirected-graph-of-english-words-img"></p>
+
+<p>This is an implementation in Java of the <strong>polarity propagation algorithm</strong> 
+described on <a href="#propor2012">[1]</a>, section <em>"3. The Polarity Propagation Algorithm"</em>,
+for classifying <em>words</em>, <em>multiwords</em> and <em>synsets</em> as <code>positive</code>, <code>negative</code> and 
+<code>neutral</code> based on an <strong>undirected graph</strong>.</p>
+
+<p>This implementation also allows running the algorithm described on <a href="#epia2011">[2]</a>,
+section "<em>2.3 Simple and Intuitive Polarity Propagation - Algorithm</em>",
+for classifying words as <code>positive</code> or <code>negative</code> based on a <strong>direted graph</strong>.</p>
+
+<p><br>In both algorithms, the goal is to start with a small set of <em>words</em>, <em>multiwords</em>
+or <em>synsets</em> manually classified, and automatically classify a bigger set of words as 
+<code>positive</code>, <code>negative</code> or even <code>neutral</code>.
+The set of words produced by these algorithms, may be useful, for example, 
+for building a dictionary of sentiment words for <a href="http://en.wikipedia.org/wiki/Sentiment_analysis">Sentiment Analysis / Opinion Mining</a>.</p>
+<h1>
+  <a name="references" class="anchor" href="#references"><span class="octicon octicon-link"></span></a>
+  <a name="references"></a>References</h1>
+
+<ol>
+<li><p><a name="propor2012"></a>Santos, A. P., Gonçalo Oliveira, H., Ramos, C., &amp; Marques, N. C. (2012). 
+<a href="http://www.psantos.com.pt/files/trabalhos-academicos/publicacoes/2012PROPOR_bootstrappingAlgorithm.pdf">A Bootstrapping Algorithm for Learning the Polarity of Words</a>. 
+In Proceedings of 10th International Conference - Computational Processing of the Portuguese 
+Language (PROPOR 2012), volume 7243 of LNCS, pp. 229-234. Coimbra, Portugal. 
+Springer.</p></li>
+<li><p><a name="epia2011"></a>Santos, A. P., Ramos, C., &amp; Marques, N. C. (2011). 
+<a href="http://www.psantos.com.pt/files/trabalhos-academicos/publicacoes/2011EPIA_polarityOfWordsThroughCommonDictionary.pdf">Determining the Polarity of Words through a Common Online Dictionary</a>. 
+In Proceedings of 15th Portuguese Conference on Artificial on Artificial intelligence 
+(EPIA 2011), volume 7026 of LNCS, pp. 649-663. Lisbon, Portugal. Springer.</p></li>
+</ol>
+      </section>
+      <footer>
+        <p>&nbsp;</p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
