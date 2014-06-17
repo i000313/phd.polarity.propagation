@@ -1,3 +1,0 @@
-good, 1
-bad, -1
-common, 0

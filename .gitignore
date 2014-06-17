@@ -1,6 +1,10 @@
-/dist/
-/lib/
-/nbproject/
 /build/
+/dist/
+/docs/*.jar
+/lib/*.jar
+/lib/*.zip
+/nbproject/
+/src/pt/psantos/phd/polarity/propagation/tests/
+/test/aux-files-yEd/
 build.xml
 manifest.mf
