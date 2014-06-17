@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Phd.polarity.propagation by i000313</title>
+    <title>Test-repo by i000313</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -16,54 +16,50 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="header">Phd.polarity.propagation</h1>
-        <p class="header">Java implementation of the polarity propagation algorithm described on a paper</p>
+        <p class="header">Source code, binaries and more information available on GitHub:</p>
 
         <ul>
-          <li class="download"><a class="buttons" href="https://github.com/i000313/phd.polarity.propagation/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/i000313/phd.polarity.propagation/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/i000313/phd.polarity.propagation">View On GitHub</a></li>
+          <li><a class="buttons github" href="https://github.com/i000313/phd.polarity.propagation">View On GitHub</a>      </li>
         </ul>
-
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/i000313">i000313</a></p>
-
-
       </header>
       <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <h1>
+<a name="polarity-propagation-algorithm---implementation" class="anchor" href="#polarity-propagation-algorithm---implementation"><span class="octicon octicon-link"></span></a>Polarity Propagation Algorithm</h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p><img src="images/ex01-undirected-graph-state-03.png" alt="tiny-undirected-graph-of-english-words-img"></p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<p>This is an implementation in Java of the <strong>polarity propagation algorithm</strong> 
+described on <a href="#propor2012">[1]</a>, section <em>"3. The Polarity Propagation Algorithm"</em>,
+for classifying <em>words</em>, <em>multiwords</em> and <em>synsets</em> as <code>positive</code>, <code>negative</code> and 
+<code>neutral</code> based on an <strong>undirected graph</strong>.</p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>This implementation also allows running the algorithm described on <a href="#epia2011">[2]</a>,
+section "<em>2.3 Simple and Intuitive Polarity Propagation - Algorithm</em>",
+for classifying words as <code>positive</code> or <code>negative</code> based on a <strong>direted graph</strong>.</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<p><br>In both algorithms, the goal is to start with a small set of <em>words</em>, <em>multiwords</em>
+or <em>synsets</em> manually classified, and automatically classify a bigger set of words as 
+<code>positive</code>, <code>negative</code> or even <code>neutral</code>.
+The set of words produced by these algorithms, may be useful, for example, 
+for building a dictionary of sentiment words for <a href="http://en.wikipedia.org/wiki/Sentiment_analysis">Sentiment Analysis / Opinion Mining</a>.</p>
+<h1>
+  <a name="references" class="anchor" href="#references"><span class="octicon octicon-link"></span></a>
+  <a name="references"></a>References</h1>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<ol>
+<li><p><a name="propor2012"></a>Santos, A. P., Gonçalo Oliveira, H., Ramos, C., &amp; Marques, N. C. (2012). 
+<a href="http://www.psantos.com.pt/files/trabalhos-academicos/publicacoes/2012PROPOR_bootstrappingAlgorithm.pdf">A Bootstrapping Algorithm for Learning the Polarity of Words</a>. 
+In Proceedings of 10th International Conference - Computational Processing of the Portuguese 
+Language (PROPOR 2012), volume 7243 of LNCS, pp. 229-234. Coimbra, Portugal. 
+Springer.</p></li>
+<li><p><a name="epia2011"></a>Santos, A. P., Ramos, C., &amp; Marques, N. C. (2011). 
+<a href="http://www.psantos.com.pt/files/trabalhos-academicos/publicacoes/2011EPIA_polarityOfWordsThroughCommonDictionary.pdf">Determining the Polarity of Words through a Common Online Dictionary</a>. 
+In Proceedings of 15th Portuguese Conference on Artificial on Artificial intelligence 
+(EPIA 2011), volume 7026 of LNCS, pp. 649-663. Lisbon, Portugal. Springer.</p></li>
+</ol>
       </section>
       <footer>
-        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+        <p>&nbsp;</p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
